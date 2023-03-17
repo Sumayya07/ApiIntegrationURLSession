@@ -13,6 +13,10 @@
 		CA5D9D8D29C4968200417C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5D9D8B29C4968200417C29 /* Main.storyboard */; };
 		CA5D9D8F29C4968400417C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5D9D8E29C4968400417C29 /* Assets.xcassets */; };
 		CA5D9D9229C4968400417C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5D9D9029C4968400417C29 /* LaunchScreen.storyboard */; };
+		CA5D9D9A29C4987C00417C29 /* apiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D9D9929C4987C00417C29 /* apiList.swift */; };
+		CA5D9D9C29C4988900417C29 /* modelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D9D9B29C4988900417C29 /* modelData.swift */; };
+		CA5D9D9F29C4990B00417C29 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CA5D9D9E29C4990B00417C29 /* MBProgressHUD */; };
+		CA5D9DA229C4993500417C29 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = CA5D9DA129C4993500417C29 /* Reachability */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		CA5D9D8E29C4968400417C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5D9D9129C4968400417C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5D9D9329C4968400417C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5D9D9929C4987C00417C29 /* apiList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiList.swift; sourceTree = "<group>"; };
+		CA5D9D9B29C4988900417C29 /* modelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5D9D9F29C4990B00417C29 /* MBProgressHUD in Frameworks */,
+				CA5D9DA229C4993500417C29 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,8 @@
 				CA5D9D8529C4968200417C29 /* AppDelegate.swift */,
 				CA5D9D8729C4968200417C29 /* SceneDelegate.swift */,
 				CA5D9D8929C4968200417C29 /* ViewController.swift */,
+				CA5D9D9929C4987C00417C29 /* apiList.swift */,
+				CA5D9D9B29C4988900417C29 /* modelData.swift */,
 				CA5D9D8B29C4968200417C29 /* Main.storyboard */,
 				CA5D9D8E29C4968400417C29 /* Assets.xcassets */,
 				CA5D9D9029C4968400417C29 /* LaunchScreen.storyboard */,
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = ApiIntegrationURLSession;
+			packageProductDependencies = (
+				CA5D9D9E29C4990B00417C29 /* MBProgressHUD */,
+				CA5D9DA129C4993500417C29 /* Reachability */,
+			);
 			productName = ApiIntegrationURLSession;
 			productReference = CA5D9D8229C4968200417C29 /* ApiIntegrationURLSession.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = CA5D9D7929C4968200417C29;
+			packageReferences = (
+				CA5D9D9D29C4990B00417C29 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				CA5D9DA029C4993500417C29 /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
 			productRefGroup = CA5D9D8329C4968200417C29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5D9D9C29C4988900417C29 /* modelData.swift in Sources */,
 				CA5D9D8A29C4968200417C29 /* ViewController.swift in Sources */,
 				CA5D9D8629C4968200417C29 /* AppDelegate.swift in Sources */,
+				CA5D9D9A29C4987C00417C29 /* apiList.swift in Sources */,
 				CA5D9D8829C4968200417C29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +378,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA5D9D9D29C4990B00417C29 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CA5D9DA029C4993500417C29 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA5D9D9E29C4990B00417C29 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA5D9D9D29C4990B00417C29 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		CA5D9DA129C4993500417C29 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA5D9DA029C4993500417C29 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA5D9D7A29C4968200417C29 /* Project object */;
 }
