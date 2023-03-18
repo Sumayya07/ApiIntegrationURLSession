@@ -17,6 +17,7 @@
 		CA5D9D9C29C4988900417C29 /* modelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D9D9B29C4988900417C29 /* modelData.swift */; };
 		CA5D9D9F29C4990B00417C29 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CA5D9D9E29C4990B00417C29 /* MBProgressHUD */; };
 		CA5D9DA229C4993500417C29 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = CA5D9DA129C4993500417C29 /* Reachability */; };
+		CAB539BF29C5C5FF00010D2B /* FullViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB539BE29C5C5FF00010D2B /* FullViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CA5D9D9329C4968400417C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5D9D9929C4987C00417C29 /* apiList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiList.swift; sourceTree = "<group>"; };
 		CA5D9D9B29C4988900417C29 /* modelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modelData.swift; sourceTree = "<group>"; };
+		CAB539BE29C5C5FF00010D2B /* FullViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				CA5D9D8529C4968200417C29 /* AppDelegate.swift */,
 				CA5D9D8729C4968200417C29 /* SceneDelegate.swift */,
 				CA5D9D8929C4968200417C29 /* ViewController.swift */,
+				CAB539BE29C5C5FF00010D2B /* FullViewVC.swift */,
 				CA5D9D9929C4987C00417C29 /* apiList.swift */,
 				CA5D9D9B29C4988900417C29 /* modelData.swift */,
 				CA5D9D8B29C4968200417C29 /* Main.storyboard */,
@@ -160,6 +163,7 @@
 				CA5D9D8A29C4968200417C29 /* ViewController.swift in Sources */,
 				CA5D9D8629C4968200417C29 /* AppDelegate.swift in Sources */,
 				CA5D9D9A29C4987C00417C29 /* apiList.swift in Sources */,
+				CAB539BF29C5C5FF00010D2B /* FullViewVC.swift in Sources */,
 				CA5D9D8829C4968200417C29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
