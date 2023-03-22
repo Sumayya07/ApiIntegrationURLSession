@@ -22,6 +22,7 @@ class FullViewVC: UIViewController {
     
     var taskelement: [TaskElement] = []
     var selectedIndex: IndexPath?
+    var img = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,8 @@ class FullViewVC: UIViewController {
         }
         
         myPage.numberOfPages = taskelement.count
+        
+        
     }
 
 
@@ -50,6 +53,7 @@ extension FullViewVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as? ImageCell else { return UICollectionViewCell() }
         let item = taskelement[indexPath.item]
         cell.imgView.imageFromUrl(urlString: item.url)
+        cell.imgView.image = img
         return cell
     }
     
