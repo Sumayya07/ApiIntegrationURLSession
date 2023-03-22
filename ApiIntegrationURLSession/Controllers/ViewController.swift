@@ -42,6 +42,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.lblText3.text = item.copyright
         cell.imgView.imageFromUrl(urlString: item.url)
         cell.imgView.contentMode = .scaleAspectFill
+        cell.imgView.layer.cornerRadius = 20
         return cell
     }
     

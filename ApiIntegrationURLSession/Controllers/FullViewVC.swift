@@ -8,7 +8,10 @@
 import UIKit
 
 class FullViewVC: UIViewController {
-
+    
+    
+    @IBOutlet var myPage: UIPageControl!
+    
     @IBOutlet weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
@@ -31,18 +34,10 @@ class FullViewVC: UIViewController {
             
             
         }
+        
+        myPage.numberOfPages = taskelement.count
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -58,12 +53,18 @@ extension FullViewVC: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        myPage.currentPage = indexPath.row
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return collectionView.bounds.size
     }
 }
 
+
 // MARK: ImageCell
 class ImageCell: UICollectionViewCell {
     @IBOutlet weak var imgView: UIImageView!
+        
 }

@@ -47,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA17020B29CAE0FD00D21082 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB539BE29C5C5FF00010D2B /* FullViewVC.swift */,
+				CA5D9D8929C4968200417C29 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA17020C29CAE11D00D21082 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA5D9D8B29C4968200417C29 /* Main.storyboard */,
+				CA5D9D9029C4968400417C29 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CA5D9D7929C4968200417C29 = {
 			isa = PBXGroup;
 			children = (
@@ -68,13 +86,11 @@
 			children = (
 				CA5D9D8529C4968200417C29 /* AppDelegate.swift */,
 				CA5D9D8729C4968200417C29 /* SceneDelegate.swift */,
-				CA5D9D8929C4968200417C29 /* ViewController.swift */,
-				CAB539BE29C5C5FF00010D2B /* FullViewVC.swift */,
+				CA17020B29CAE0FD00D21082 /* Controllers */,
+				CA17020C29CAE11D00D21082 /* View */,
 				CA5D9D9929C4987C00417C29 /* apiList.swift */,
 				CA5D9D9B29C4988900417C29 /* modelData.swift */,
-				CA5D9D8B29C4968200417C29 /* Main.storyboard */,
 				CA5D9D8E29C4968400417C29 /* Assets.xcassets */,
-				CA5D9D9029C4968400417C29 /* LaunchScreen.storyboard */,
 				CA5D9D9329C4968400417C29 /* Info.plist */,
 			);
 			path = ApiIntegrationURLSession;
